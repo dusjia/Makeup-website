@@ -77,8 +77,13 @@ body {
 }
 
 .header__img{
-    max-height: 50vh;
-    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/white-cosmetic.jpg);
+    background-position: center;
+    background-size: cover;
+    /* max-height: 50vh;
+    overflow: hidden; */
 }
 
 .header__img img{
@@ -144,6 +149,9 @@ body {
     color: var(--light__brown);
 }
 
+
+/* ---------- section brands --------- */
+
 .section__brands{
     background-color: var(--bcg2);
 }
@@ -165,7 +173,6 @@ body {
     font-family: var(--title__font);
     text-align: center;
     font-weight: 500;
-
 }
 
 .section__brands--title{
@@ -200,6 +207,9 @@ body {
     font-size: 2.2rem;
     padding-right: 1.3rem;
 }
+
+
+/* ----------- section offer ----------- */
 
 .section__offer{
     background-color: var(--bcg4);
@@ -244,6 +254,21 @@ body {
     color: var(--light__pink);
 }
 
+/* --------- section products --------- */
+
+
+.products__img{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/products.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section__products--container, .section__bestsellers--container {
+    flex-direction: column;
+}
+
 .products__title{
     padding: 3rem .4rem;
 }
@@ -267,6 +292,8 @@ body {
     width: 100%;
 }
 
+/* ---------- section bestsellers --------- */
+
 .bestsellers__img{
     max-height: 50vh;
     overflow: hidden;
@@ -285,6 +312,9 @@ body {
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
+
+
+/* -------- section newsletter ---------- */
 
 .section__newsletter{
     background-color: var(--bcg1);
@@ -310,7 +340,7 @@ body {
     font-size: 2rem; 
 }
 
-
+/* --------- min-width 768px ---------- */
 
 @media (min-width: 768px){
     .nav__logo, .nav__menu--hamburger .fa{
@@ -321,19 +351,19 @@ body {
         padding-right: 5rem;
     }
 
-    .header{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+    .header__content{
+        padding: 13rem;
     }
 
-    .header__img img{
+    /* .header__img img{
         object-position: 0 0;
         height: 100%;
-    }
+    } */
     
     .header__img{
-        min-width: 45vw;
-        max-height: none;
+        /* min-width: 45vw;
+        max-height: none; */
+        height: auto;
     }
 
     .grid{
@@ -418,9 +448,7 @@ body {
         font-size: 3rem;
     }
 
-    .section__products--container, .section__bestsellers--container {
-        flex-direction: column;
-    }
+
 
     
   

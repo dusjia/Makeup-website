@@ -79,7 +79,7 @@ body {
 
 .products__img, .bestsellers__img, .header__img{
     width: 100%;
-    height: 50vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
 }
@@ -121,7 +121,7 @@ body {
 
 .header__text--secondary{
     margin: 3rem 3rem 0;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-top: 1px solid var(--dark__black);
 }
 
@@ -242,7 +242,7 @@ body {
 }
 
 .offer__title--primary{
-    padding-top: 4rem;
+    padding-block: 4rem;
 }
 
  .offer__title, .offer__title--primary{
@@ -345,7 +345,7 @@ body {
 
 @media (min-width: 768px){
     .nav__logo, .nav__menu--hamburger .fa{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     .nav{
         padding-left: 5rem;
@@ -353,28 +353,34 @@ body {
     }
 
     .header__content{
-        padding: 13rem;
+        padding-block: 13rem;
+    }
+
+    .header__logo--text{
+        padding-block: 2rem;
+    }
+
+    .subtitle__text{
+        font-size: 3rem;
     }
 
     .header__img{
-        /* min-width: 45vw;
-        max-height: none; */
         height: auto;
     }
 
     .grid{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 300px 1fr;
     }
 
 
     .header__logo, .header__logo--secondary{
-        font-size: 7rem;
+        font-size: 8.5rem;
     }
 
     .quote__text{
-        font-size: 3.5rem;
-        padding: 6rem 0;
+        font-size: 5rem;
+        padding: 6.3rem 1rem;
     }
 
     .title{
@@ -392,47 +398,51 @@ body {
 
     .section__brands--img img{
        padding-top: 4rem ;
-
     }
 
     .section__products{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 300px;
     }
-
-    .products__img{
-        max-width: 45vw;
-        height: 100%;
-    }
-
-
 
     .products{
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-weight: 300;
     }
 
     .button{
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding-left: 5.5rem;
         padding-right: 5.5rem;
+        margin-top: 5rem;
     }
 
     .button__text{
-        font-size: 2.5rem;
+        font-size: 3.2rem;
     }
 
     .fa-arrow-right-long{
         font-size: 3.5rem;
     }
     
-    .bestsellers__img{
-        min-width: 30vh;
-        max-height: 75vh;
+
+    .offer__title{
+        font-size: 5rem;
     }
 
-    .section__bestsellers--container{
+    .fa-heart{
+        font-size: 8rem;
+        padding: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .fa-seedling, .fa-droplet, .fa-check{
+        font-size: 5rem;
+    }
+
+    /* .section__bestsellers--container{
         padding-left: 2rem;
         padding-right: 2rem;
-    }
+    } */
 
     .newsletter__title, .email__input{
         font-size: 3rem;

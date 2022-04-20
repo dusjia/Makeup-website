@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:ital@0;1&family=Raleway:ital,wght@0,100;1,100&family=Roboto:wght@100;300&display=swap');
+
+:root{
+    --bcg1: #d3c3b6;
+    --bcg2: #d0a799;
+    --bcg3: #e6d7ca;
+    --bcg6: #f5efea;
+    --bcg4: #e9e0d8;
+    --bcg5: #b1ccae;
+    --light__pink: #d0a799;
+    --light__white: #f3f0f0;
+    --dark__black: #333;
+    --light__grey: #6c6764;
+    --light__brown: #927b68;
+    --dark__brown: #7b4f29;
+    --logo__font: 'Nanum Myeongjo', serif;
+    --title__font: 'Playfair Display', serif;
+    --subtitle__text: 'Raleway', sans-serif;
+    --small__text: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.nav__menu{
+    display: none;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--light__white);
+}
+
+.nav__logo, .nav__menu--hamburger .fa{
+    font-size: 2.5rem;
+}
+
+.logo{
+    font-family: var(--title__font);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.logo__primary{
+    color: var(--dark__black);
+}
+
+.logo__secondary{
+    color: var(--light__grey);
+}
+
+.header__img{
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+.header__img img{
+    width: 100%;
+    object-position: 0 -14rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container{
+    background-color: var(--bcg1);
+    text-align: center;
+}
+
+.header__logo, .header__logo--secondary{
+    font-size: 4rem;
+}
+
+.subtitle__text{
+    font-family: var(--subtitle__text);
+}
+
+.header__content{
+    padding-top: 5rem;
+}
+
+.header__text{
+    padding-top: 1rem;
+    color: var(--light__grey);
+}
+
+
+.header__text--secondary{
+    margin: 3rem 3rem 0;
+    padding: 1rem 1rem;
+    border-top: 1px solid var(--dark__black);
+}
+
+.button{
+    color: var(--light__grey);
+    font-family: var(--small__text);
+    background-color: transparent;
+    border: 1px solid var(--light__grey);
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.main__quote{
+    background-color: var(--light__white);
+    text-align: center;
+}
+
+.quote__text{
+    font-size: 2.5rem;
+    padding: 3rem 0;
+    font-family: var(--title__font);
+    color: var(--light__brown);
+}
+
+.section__brands{
+    background-color: var(--bcg2);
+}
+
+.section__brands--img img{
+    width: 100%
+}
+
+.fa-thin{
+    font-size: 10rem;
+}
+
+.section__brands--container{
+    text-align: center;
+}
+
+.title{
+    font-size: 5rem;
+    font-family: var(--title__font);
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.section__brands--title{
+    padding: 3rem 0;
+}
+
+.text{
+    font-family: var(--small__text);
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.section__text{
+    padding: 2rem 2rem;
+}
+
+.title, .text, .arrow__button, .button__text, .header__logo--text{
+    color: var(--dark__black);
+}
+
+.arrow__button{
+    padding-bottom: 2rem;
+}
+
+.button__text{
+    font-family: var(--small__text);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.fa-arrow-right-long{
+    font-size: 2.2rem;
+    padding-right: 1.3rem;
+}
+
+.section__offer{
+    background-color: var(--bcg4);
+}
+
+.fa-heart{
+    font-size: 5rem;
+    color: var(--light__brown);
+    border: 1px solid var(--light__pink);
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: var(--light__pink);
+    margin-bottom: 2rem;
+}
+
+.offer__texts{
+    text-align: center;
+}
+
+.offer__text{
+    padding: 3rem 2.5rem;
+}
+
+.offer__title{
+    font-size: 3rem;
+}
+
+.fa-seedling, .fa-droplet, .fa-check{
+    font-size: 2.2rem;
+    padding-right: 1.2rem;
+}
+
+.offer__title--primary{
+    padding-top: 4rem;
+}
+
+ .offer__title, .offer__title--primary{
+    color: var(--dark__brown);
+}
+
+.fa-seedling, .fa-droplet, .fa-check{
+    color: var(--light__pink);
+}
+
+.products__title{
+    padding: 3rem .4rem;
+}
+.section__products--container{
+    background-color: var(--bcg3);
+    text-align: center;
+}
+
+.products{
+    font-size: 1.8rem;
+    font-family: var(--subtitle__text);
+    padding: .5rem 0;
+}
+
+.fa-angle-right{
+    color: var(--dark__black);
+    padding-right: 1rem;
+}
+
+.products__img img{
+    width: 100%;
+}
+
+.bestsellers__img{
+    max-height: 50vh;
+    overflow: hidden;
+}
+.bestsellers__img img{
+    width: 100%;
+    object-position: 0 -14rem;
+}
+
+.section__bestsellers--container{
+    background-color: var(--bcg5);
+    text-align: center;
+}
+
+.arrow__button{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.section__newsletter{
+    background-color: var(--bcg1);
+}
+
+.newsletter__title{
+    font-family: var(--subtitle__text);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 4rem 2rem ;
+
+}
+
+.newsletter__email{
+    flex-direction: column;
+}
+
+.email__input{
+    border: none;
+    border-bottom: 1px solid var(--dark__black);
+    background-color: transparent;
+    font-family: var(--subtitle__text);
+    font-size: 2rem; 
+}
+
+
+
+@media (min-width: 768px){
+    .nav__logo, .nav__menu--hamburger .fa{
+        font-size: 3.5rem;
+    }
+    .nav{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header__img img{
+        object-position: 0 0;
+        height: 100%;
+    }
+    
+    .header__img{
+        min-width: 45vw;
+        max-height: none;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    .header__logo, .header__logo--secondary{
+        font-size: 7rem;
+    }
+
+    .quote__text{
+        font-size: 3.5rem;
+        padding: 6rem 0;
+    }
+
+    .title{
+        font-size: 6.5rem;
+    }
+
+    .text{
+       font-size: 2.5rem;
+    }
+
+    .section__brands--img{
+        max-width: 60vw;
+        margin: 0 auto;
+    }
+
+    .section__brands--img img{
+       padding-top: 4rem ;
+
+    }
+
+    .section__products{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .products__img{
+        max-width: 45vw;
+        height: 100%;
+    }
+
+    .products__img img{
+        width: fit-content;
+    }
+
+    .products{
+        font-size: 2.5rem;
+    }
+
+    .button{
+        font-size: 2.5rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    .button__text{
+        font-size: 2.5rem;
+    }
+
+    .fa-arrow-right-long{
+        font-size: 3.5rem;
+    }
+    
+    .bestsellers__img{
+        min-width: 30vh;
+        max-height: 75vh;
+    }
+
+    .bestsellers__img img{
+        object-position: -200px -100px;
+        width: fit-content;
+    }
+    .section__bestsellers--container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .newsletter__title, .email__input{
+        font-size: 3rem;
+    }
+
+    .section__products--container, .section__bestsellers--container {
+        flex-direction: column;
+    }
+
+    
+  
+ 
+}
+
+/* 
+@media (min-width: 1200px){
+    
+} */

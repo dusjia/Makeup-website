@@ -153,6 +153,7 @@ body {
 
 .section__brands{
     background-color: var(--bcg2);
+    flex-direction: column;
 }
 
 .section__brands--img img{
@@ -212,8 +213,12 @@ body {
 
 .section__offer{
     background-color: var(--bcg4);
+    
 }
 
+.offer__icons{
+    flex-direction: column;
+}
 .fa-heart{
     font-size: 5rem;
     color: var(--light__brown);
@@ -347,12 +352,16 @@ body {
     .nav__logo, .nav__menu--hamburger .fa{
         font-size: 4rem;
     }
+
+    .nav__menu{
+        display: none;
+    }
     .nav{
         padding-left: 5rem;
         padding-right: 5rem;
     }
 
-    .header__content{
+    .header__content,{
         padding-block: 13rem;
     }
 
@@ -429,6 +438,10 @@ body {
         font-size: 5rem;
     }
 
+    .offer__title--primary{
+        font-size: 8.5rem;
+    }
+
     .fa-heart{
         font-size: 8rem;
         padding: 4rem;
@@ -444,18 +457,257 @@ body {
         padding-right: 2rem;
     } */
 
+    .bestsellers__products{
+        font-size: 2.5rem;
+    }
+
+    .section__bestsellers--container{
+        padding-block: 7rem;
+    }
+
     .newsletter__title, .email__input{
         font-size: 3rem;
     }
-
-
-
-    
-  
- 
 }
 
-/* 
+
+
 @media (min-width: 1200px){
     
-} */
+    .grid{
+        display: grid;
+        grid-template-columns: 800px 2fr;
+    }
+
+    .nav__menu--hamburger{
+        display: none;
+    }
+
+    .nav__menu{
+        display: flex;
+    }
+    .nav__logo{
+        cursor: pointer;
+    }
+
+    .nav__menu li{
+        list-style: none;
+    }
+
+    .nav__menu a{
+        font-size: 3rem;
+        padding-inline: 3rem;
+        color: var(--dark__black);
+        padding-bottom: 1rem;
+        transition: all .3s ease;
+    }
+
+    .nav__menu a:hover{
+        border-bottom: 1px solid var(--dark__black);
+    }
+
+
+    .nav{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        /* position: fixed; */
+    }
+
+    .header__content{
+        padding-block: 15rem;
+    }
+
+    .header__logo--text{
+        padding-block: 4rem;
+    }
+
+    .subtitle__text{
+        font-size: 4rem;
+    }
+
+    .header__logo, .header__logo--secondary{
+        font-size: 10rem;
+    }
+
+    .header__container, .section__products--container{
+        padding-inline: 5rem;
+    }
+
+    .button{
+        font-size: 2.5rem;
+        padding-inline: 6rem;
+        padding-block: 1.5rem;
+        margin-top: 7rem;
+        transition: all .3s ease;
+    }
+
+    .button:hover{
+        color: var(--dark__brown);
+        border-color: var(--dark__brown);
+
+    }
+
+    .section__brands{
+        flex-direction: initial;
+    }
+
+    .section__brands--container, .section__products--container{
+        padding-block: 12rem;
+        padding-inline: 3rem;
+    }
+
+    .section__products--container{
+        padding-left: 15rem;
+        padding-block: 4rem;
+    }
+
+    .section__brands--container{
+        padding-right: 20rem;
+    }
+
+    .section__brands--img{
+        padding-left: 30rem;
+        width: 100%;
+        justify-content: left;
+        padding-top: 10rem;
+    }
+
+    .section__brands--img img{
+        width: 80%;
+        padding-top: 0;
+        box-shadow:  -70px -70px 0 20px var(--dark__black);
+
+    }
+
+    .section__products{
+        grid-template-columns: 2fr 800px;
+    }
+
+    .title{
+        font-size: 9rem;
+        text-align: left;
+    }
+
+    .products{
+        font-size: 3.5rem;
+        padding-block: 1.5rem;
+    }
+
+    .products__title{
+        padding-right: 10rem;
+        padding-left: 0;
+    }
+
+    .products__text, .bestsellers__texts, .text__container{
+        width: 100%;
+        text-align: left;
+        
+    }
+
+    .section__bestsellers--container{
+        padding-left: 20rem;
+    }
+    .bestsellers__products{
+        font-size: 2.5rem;
+    }
+
+   
+    .arrow__button{
+        justify-content: initial;
+        align-items: initial;
+        padding-left: 2rem;
+        padding-top: 5rem;
+    }
+
+    .arrow__button a:hover{
+        border-bottom: 1px solid var(--dark__black);
+    }
+
+    .button__text{
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+
+    .products__title{
+        padding-bottom: 8rem;
+    }
+
+    .newsletter__title{
+        font-size: 4rem;
+    }
+
+    .email__input{
+        font-size: 3rem;
+    }
+
+    .quote__text{
+        padding-block: 9rem;
+        font-size: 5.5em;
+    }
+
+    .offer__text{
+        /* padding-inline: 10rem; */
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .offer__title{
+        font-size: 5rem;
+    }
+
+    .offer__title--primary{
+        text-align: center;
+    }
+
+    .offer__icons{
+        flex-direction: initial;
+    }
+
+    .offer__content{
+        flex-direction: column;
+        padding-block: 10rem;
+        padding-inline: 5rem;
+    }
+
+    .newsletter__container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-block: 2rem;
+        padding-inline: 5rem;
+
+    }
+
+    .newsletter__email{
+        padding: 5rem 25rem 0rem 5rem ;
+    }
+
+    .newsletter__title{
+        width: 40%;
+        padding-top: 5rem;
+    }
+
+    .email__input{
+        outline-color: var(--light__grey);
+    }
+
+    .footer__menu{
+        /* flex-direction: row; */
+    }
+
+    .footer__container{
+        justify-content: space-between;
+        padding-inline: 3rem;
+        padding-block: 5rem;
+    }
+
+    .fa-brands{
+        font-size: 4rem;
+        padding-inline: 2rem;
+        cursor: pointer;
+    }
+
+    .footer__logo{
+        padding-left: 5.3rem;
+    }
+}
+

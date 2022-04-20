@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makeup Website</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://kit.fontawesome.com/4b8b8b6619.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b8b8b6619.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
         <span class="nav__logo logo__primary logo">Make<span class="nav__logo-secondary logo__secondary">Up</span></span>
-        <ul class="nav__menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Revievs</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="nav__menu flex">
+        <ul class="nav__menu flex">
+            <li><a class="subtitle__text" href="#">About Us</a></li>
+            <li><a class="subtitle__text" href="#">Shop</a></li>
+            <li><a class="subtitle__text"  href="#">Revievs</a></li>
+            <li><a class="subtitle__text" href="#">Contact</a></li>
         </ul>
+    </div>
         <div class="nav__menu--hamburger">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
@@ -40,17 +42,20 @@
             <p class="quote__text">Discover Your Beauty With Our Cosmetics</p>
         </div>
 
-        <section class="section__brands">
+        <section class="section__brands flex">
             <div class="section__brands--img">
             <img src="img/cosmetics-gucci.jpg" alt="">
         </div>
         <div class="section__brands--container">
             <h2 class="title section__brands--title">The most popular and loved brands</h2>
+            <div class="text__container">
             <p class="section__text text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptates ipsum sequi, labore perferendis facere ratione dignissimos libero animi quasi explicabo.</p>
+        </div>
             <div class="arrow__button flex">
             <i class="fa-solid fa-arrow-right-long"></i>
-            <p class="button__text">Discover more</p>
-            </div>
+            <a class="button__text" href="">Discover more</a>
+        </div>
+            
         </div>
         </section>
 
@@ -61,10 +66,12 @@
             <section class="section__products grid">
                 <div class="section__products--container flex">
                     <h2 class="title products__title">Cosmetics made with passion</h2>
+                    <div class="products__text">
                     <p class="products"><i class="fa-solid fa-angle-right"></i>Skincare</p>
                     <p class="products"><i class="fa-solid fa-angle-right"></i>Face Cosmetics</p>
                     <p class="products"><i class="fa-solid fa-angle-right"></i>Body Cosmetics</p>
                     <button class="button ">Buy now</button>
+                </div>
                 </div>
                 <div class="products__img">
                     <!-- <img src="img/products.jpg" alt=""> -->
@@ -78,7 +85,9 @@
 
         <section class="section__offer">
             <h2 class="title offer__title--primary">What we offer</h2>
-            <div class="offer__icons">
+            <div class="offer__icons flex">
+
+                <div class="offer__content flex">
             <div class=" flex">
                 <i class="fa-solid fa-heart"></i>
             </div>
@@ -87,7 +96,10 @@
                 <h3 class="subtitle__text offer__title"><i class="fa-solid fa-check"></i>high quality</h3>
                 <p class="offer__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime quis qui sapiente similique, quisquam consequuntur ab soluta est odio explicabo deserunt. Iste inventore ut sunt aut accusamus cum quidem.</p>
             </div>
+        </div>
 
+
+        <div class="offer__content flex">
             <div class="flex">
                 <i class="fa-solid fa-heart"></i>
             </div>
@@ -96,6 +108,9 @@
                 <h3 class="subtitle__text offer__title"><i class="fa-solid fa-droplet"></i>good composition</h3>
                 <p class="offer__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime quis qui sapiente similique, quisquam consequuntur ab soluta est odio explicabo deserunt. Iste inventore ut sunt aut accusamus cum quidem.</p>
             </div>
+        </div>
+
+        <div class="offer__content flex">
 
             <div class="flex">
                 <i class="fa-solid fa-heart"></i>
@@ -105,6 +120,7 @@
                 <h3 class="subtitle__text offer__title"><i class="fa-solid fa-seedling"></i>natural ingredients</h3>
                 <p class="offer__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime quis qui sapiente similique, quisquam consequuntur ab soluta est odio explicabo deserunt. Iste inventore ut sunt aut accusamus cum quidem.</p>
             </div>
+        </div>
         </div>
         </section>
 
@@ -121,11 +137,11 @@
                 <h2 class="title products__title">Our bestsellers</h2>
 
                 <div class="bestsellers__texts">
-                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Charlotte Tilbury Beautiful Skin Foundation</p>
-                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>YSL Beauty NU Bare Look Tint</p>
-                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Benefit Cosmetics The Professional Lite</p>
-                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Valentino Beauty Eye2Cheek Eye Shadow</p>
-                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Dior Forever Couture Luminizer Highlighter</p>
+                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Charlotte Tilbury Foundation</p>
+                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>YSL Beauty Tint</p>
+                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Benefit The Professional Lite</p>
+                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Valentino Eye2Cheek Eye Shadow</p>
+                <p class="products bestsellers__products"><i class="fa-solid fa-angle-right"></i>Dior Forever Highlighter</p>
                 <div class="arrow__button flex">
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p class="button__text">Discover more</p>
@@ -147,10 +163,29 @@
                     <button class="button ">Subscribe</button>
                 </div>
             </div>
-
-
         </section>
-
     </main>
+
+    <footer class="footer">
+        <span class="nav__logo logo__primary logo footer__logo">Make<span class="nav__logo-secondary logo__secondary">Up</span></span>
+
+        <div class="footer__container flex">
+        <div class="nav__menu footer__menu flex">
+            <ul class="flex"> 
+                <li><a class="subtitle__text" href="#">About Us</a></li>
+                <li><a class="subtitle__text" href="#">Shop</a></li>
+                <li><a class="subtitle__text"  href="#">Revievs</a></li>
+                <li><a class="subtitle__text" href="#">Contact</a></li>
+            </ul>
+        </div>
+
+            <div class="footer__icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>

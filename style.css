@@ -63,6 +63,12 @@ body {
     font-size: 2.5rem;
 }
 
+
+
+.cos{
+    display: none;
+}
+
 .logo{
     font-family: var(--title__font);
     font-weight: 400;
@@ -476,7 +482,7 @@ body {
     
     .grid{
         display: grid;
-        grid-template-columns: 800px 2fr;
+        grid-template-columns: 35% 65%;
     }
 
     .nav__menu--hamburger{
@@ -580,7 +586,7 @@ body {
     }
 
     .section__products{
-        grid-template-columns: 2fr 800px;
+        grid-template-columns: 55% 45%;
     }
 
     .title{
@@ -690,9 +696,9 @@ body {
         outline-color: var(--light__grey);
     }
 
-    .footer__menu{
-        /* flex-direction: row; */
-    }
+    /* .footer__menu{
+        flex-direction: row;
+    } */
 
     .footer__container{
         justify-content: space-between;
@@ -710,4 +716,6 @@ body {
         padding-left: 5.3rem;
     }
 }
+
+
 

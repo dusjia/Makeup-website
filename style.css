@@ -367,7 +367,7 @@ body {
         padding-right: 5rem;
     }
 
-    .header__content,{
+    .header__content{
         padding-block: 13rem;
     }
 
@@ -500,12 +500,19 @@ body {
         list-style: none;
     }
 
+    .nav__menu--container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .nav__menu a{
-        font-size: 3rem;
+        font-size: 2.7rem;
         padding-inline: 3rem;
         color: var(--dark__black);
-        padding-bottom: 1rem;
+        /* padding-bottom: 1rem; */
         transition: all .3s ease;
+        padding-bottom: 1rem;
     }
 
     .nav__menu a:hover{
@@ -520,7 +527,7 @@ body {
     }
 
     .header__content{
-        padding-block: 15rem;
+        padding-block: 11rem;
     }
 
     .header__logo--text{
@@ -528,7 +535,7 @@ body {
     }
 
     .subtitle__text{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .header__logo, .header__logo--secondary{
@@ -540,11 +547,11 @@ body {
     }
 
     .button{
-        font-size: 2.5rem;
-        padding-inline: 6rem;
-        padding-block: 1.5rem;
+        font-size: 2.2rem;
+        padding-inline: 5rem;
+        padding-block: 1.3rem;
         margin-top: 7rem;
-        transition: all .3s ease;
+        transition: all .2s ease;
     }
 
     .button:hover{
@@ -559,7 +566,7 @@ body {
 
     .section__brands--container, .section__products--container{
         padding-block: 12rem;
-        padding-inline: 3rem;
+        padding-inline: 2rem;
     }
 
     .section__products--container{
@@ -590,17 +597,18 @@ body {
     }
 
     .title{
-        font-size: 9rem;
+        font-size: 7rem;
         text-align: left;
     }
 
     .products{
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding-block: 1.5rem;
     }
 
     .products__title{
         padding-right: 10rem;
+        text-align: left;
         padding-left: 0;
     }
 
@@ -611,17 +619,20 @@ body {
     }
 
     .section__bestsellers--container{
-        padding-left: 20rem;
+        padding-left: 30rem;
+        display: block;
     }
     .bestsellers__products{
         font-size: 2.5rem;
     }
 
+    .bestsellers__texts{
+        padding-left: 0;
+    }
    
     .arrow__button{
         justify-content: initial;
         align-items: initial;
-        padding-left: 2rem;
         padding-top: 5rem;
     }
 
@@ -639,11 +650,11 @@ body {
     }
 
     .newsletter__title{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .email__input{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .quote__text{
@@ -653,12 +664,12 @@ body {
 
     .offer__text{
         /* padding-inline: 10rem; */
-        font-size: 2rem;
+        font-size: 1.9rem;
         text-align: left;
     }
 
     .offer__title{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .offer__title--primary{

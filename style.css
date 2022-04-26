@@ -221,7 +221,9 @@ body {
     background-color: var(--bcg4);
     
 }
-
+.offer__content{
+    flex-wrap: wrap;
+}
 .offer__icons{
     flex-direction: column;
 }
